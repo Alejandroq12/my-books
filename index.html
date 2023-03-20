@@ -14,17 +14,29 @@
 
 <body>
 
-  <header>
-  <div class="header-container" aria-label="Header container">
-    <h1>Awesome books</h1>
-    <nav id="nav-bar" aria-label="Navigation bar">
-
-    </nav>
-  </header>
-    <main>
-      <section class="section-one">
-
-      </section>
+  <div class="container title">
+    <h1>Awesome Books</h1>
+</div>
+<div class="booksContainer" id="bookList">
+</div>
+<template id="bookInfoTemplate">
+    <div class="book">
+      <h4></h4>
+      <p></p>
+      <button class="removeButton">Remove</button>
+    </div>
+  </template>
+  <div class="booksContainer"></div>
+        <hr>
+    </div>
+</template>
+<div class="container" id="addBookForm">
+    <form>
+        <input type="text" id="bookTitle" placeholder="Book Title"><br />
+        <input type="text" id="bookAuthor" placeholder="Author Name"><br />
+        <button id="addBookButton">Add Book</button>
+    </form>
+</div>
       <script src="./index.js">
       </script>
 </body>
