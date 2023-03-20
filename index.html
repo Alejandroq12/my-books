@@ -14,32 +14,29 @@
 
 <body>
 
-  <header>
-  <div class="header-container" aria-label="Header container">
-    <h1>Awesome books</h1>
-    <nav id="nav-bar" aria-label="Navigation bar">
-      <ul class="nav-ul__options" aria-label="Navigation options">
-        <li><a class="ul-li__links" href="#" tabindex="0">List</a></li>
-        <li><a class="ul-li__links" href="#" tabindex="0">Add New</a></li>
-        <li><a class="ul-li__links" href="#" tabindex="0">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-    <main>
-      <section class="section-one">
-        <div class="section-books">
-          <h1>Awesome books</h1>
-          <div class="all-books"></div>
-        </div>
-        <div class="section-form">
-          <h1>Add a new book</h1>
-          <form action="#" id="form" class="form" method="POST">
-            <p id="error"></p>
-            <input type="text" name="title" id="title" placeholder="Title" required><br />
-            <input type="text" name="autor-name" id="author-name" placeholder="Author" required><br />
-            <button type="submit" id="submit">Add</button>
-          </form>
-      </section>
+  <div class="container title">
+    <h1>Awesome Books</h1>
+</div>
+<div class="booksContainer" id="bookList">
+</div>
+<template id="bookInfoTemplate">
+    <div class="book">
+      <h4></h4>
+      <p></p>
+      <button class="removeButton">Remove</button>
+    </div>
+  </template>
+  <div class="booksContainer"></div>
+        <hr>
+    </div>
+</template>
+<div class="container" id="addBookForm">
+    <form>
+        <input type="text" id="bookTitle" placeholder="Book Title"><br />
+        <input type="text" id="bookAuthor" placeholder="Author Name"><br />
+        <button id="addBookButton">Add Book</button>
+    </form>
+</div>
       <script src="./index.js">
       </script>
 </body>
