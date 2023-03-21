@@ -15,15 +15,15 @@
 <body>
 
   <div class="container title">
-    <h1>Awesome Books</h1>
+    <h1 tabindex="0">Awesome Books</h1>
 </div>
-<div class="booksContainer" id="bookList">
+<div class="booksContainer" id="bookList" tabindex="0">
 </div>
 <template id="bookInfoTemplate">
-    <div class="book">
+    <div class="book" tabindex="0">
       <h4></h4>
       <p></p>
-      <button class="removeButton">Remove</button>
+      <button class="removeButton" tabindex="0">Remove</button>
     </div>
   </template>
   <div class="booksContainer"></div>
@@ -32,9 +32,9 @@
 </template>
 <div class="container" id="addBookForm">
     <form>
-        <input type="text" id="bookTitle" placeholder="Book Title"><br />
-        <input type="text" id="bookAuthor" placeholder="Author Name"><br />
-        <button id="addBookButton">Add Book</button>
+        <input type="text" id="bookTitle" placeholder="Book Title" tabindex="0"><br />
+        <input type="text" id="bookAuthor" placeholder="Author Name" tabindex="0"><br />
+        <button type="submit" id="addBookButton" tabindex="0">Add Book</button>
     </form>
 </div>
       <script src="./index.js">
