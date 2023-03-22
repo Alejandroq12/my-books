@@ -91,4 +91,11 @@ document.addEventListener('DOMContentLoaded', () => {
     contactSection.classList.add('hidden');
     section.classList.remove('hidden');
   }
+
+  navBooks.addEventListener('click', () => {
+    showSection(booksSection);
+  });
+
+
+  });
 });
