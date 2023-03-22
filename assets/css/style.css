@@ -25,3 +25,45 @@ main {
   font-size: 1.6rem;
   padding: 1rem;
 }
+
+.contentSection.hidden {
+  display: none;
+}
+
+/* header section */
+header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #c7d6d8;
+  padding: 1rem;
+}
+
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin-right: auto;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  outline: 0.2rem solid black;
+  outline-offset: 0.4rem;
+  cursor: pointer;
+}
+
+ul li:hover {
+  color: white;
+  transform: scale(1.4);
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+}
+
+hr {
+  width: 50%;
+}
