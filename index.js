@@ -100,5 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showSection(addBookSection);
   });
 
-
+  navContact.addEventListener('click', () => {
+    showSection(contactSection);
+  });
 });
