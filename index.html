@@ -9,37 +9,64 @@
   <meta name="keywords" content="JavaScript, Good practices, CSS, HTML, ES6, Objects, Arrays">
   <meta name="author" content="Julio Quezada">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Awesome Books</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500;800&family=Great+Vibes&display=swap');
-</style>
+  <title>My Books</title>
 </head>
 
 <body>
-  <div class="container title">
-      <h1>Awesome Books</h1>
-  </div>
-  <div class="booksContainer" id="bookList">
-  </div>
-  <template id="bookInfoTemplate">
-      <div class="book">
-          <div class="bookTitleAuthor">
-              <h4></h4>
-              <span>by</span>
-              <p></p>
-          </div>
-        <button class="removeButton">Remove</button>
+  <header>
+    <h1 class="logo">My Books</h1>
+    <nav>
+      <ul>
+      <li id="navBooks" class="navButton" tabindex="0">Books</li>
+      <li id="navAddBook" class="navButton" tabindex="0">Add Book</li>
+      <li id="navContact" class="navButton" tabindex="0">Contact</li>
+    </ul>
+    </nav>
+  </header>
+  <div class="date">
+  <div class="live-date"></div>
+</div>
+  <main>
+    <section id="booksSection" class="contentSection">
+      <div class="container title">
+        <h1 class="books-section__h1" tabindex="0">My Books</h1>
       </div>
-  </template>
-  <div class="container addBookForm">
-      <hr>
-      <h2>Add A New Book</h2>
-      <form>
-          <input type="text" id="bookTitle" placeholder="Book Title"><br />
-          <input type="text" id="bookAuthor" placeholder="Author Name"><br />
-          <button id="addBookButton">Add Book</button>
-      </form>
-  </div>
+      <div class="booksContainer" id="bookList">
+      </div>
+      <template id="bookInfoTemplate">
+        <div class="book">
+          <div class="bookTitleAuthor">
+            <h4 tabindex="0"></h4>
+            <span>by</span>
+            <p tabindex="0"></p>
+          </div>
+          <button type="submit" aria-label="Remove books" class="removeButton" tabindex="0">Remove</button>
+        </div>
+      </template>
+    </section>
+    <section id="addBookSection" class="contentSection hidden">
+      <div class="container addBookForm">
+        <h2 class="add-books__h2" tabindex="0">Add A New Book</h2>
+        <form>
+          <input type="text" id="bookTitle" placeholder="Book Title" tabindex="0"><br />
+          <input type="text" id="bookAuthor" placeholder="Author Name" tabindex="0"><br />
+          <button type="submit" aria-label="Add books" id="addBookButton" tabindex="0">Add Book</button>
+        </form>
+      </div>
+    </section>
+    <section id="contactSection" class="contentSection hidden">
+      <div class="container">
+        <h2 class="contact-section__h2" tabindex="0">Contact Us</h2>
+        <p class="contact-section__p" tabindex="0">Email: example@example.com</p>
+        <p class="contact-section__p" tabindex="0">Phone: +1 234  8900</p>
+        <p class="contact-section__p" tabindex="0">Address: 1234 Book Street</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p tabindex="0">Awesome Books &copy; 2023</p>
+  </footer>
   <script src="./index.js"></script>
 </body>
+
 </html>
