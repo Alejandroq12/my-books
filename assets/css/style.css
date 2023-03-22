@@ -120,3 +120,26 @@ button {
   background-color: white;
   box-shadow: 5px 4px black;
 }
+
+/* Add book section */
+.add-books__h2 {
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+.addBookForm input,
+input:focus {
+  width: 50%;
+  margin: 0.5rem 0;
+  border: solid black 3px;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+  padding: 1rem;
+  cursor: pointer;
+  margin: 1.2rem 0 2.2rem; */
+}
+
+.addBookForm button {
+  margin: auto;
+}
