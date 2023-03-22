@@ -77,19 +77,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   booksListUI.render();
 
-const navBooks = document.querySelector('navBooks');
-const navAddBook = document.querySelector('navAddBook');
-const navContact = document.querySelector('navContact');
+  const navBooks = document.getElementById('navBooks');
+  const navAddBook = document.getElementById('navAddBook');
+  const navContact = document.getElementById('navContact');
 
-
-
-
-
-
-
-
-
-
-
-
+  const booksSection = document.getElementById('booksSection');
+  const addBookSection = document.getElementById('addBookSection');
+  const contactSection = document.getElementById('contactSection');
 });
