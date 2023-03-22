@@ -84,4 +84,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const booksSection = document.getElementById('booksSection');
   const addBookSection = document.getElementById('addBookSection');
   const contactSection = document.getElementById('contactSection');
+
+  function showSection(section) {
+    booksSection.classList.add('hidden');
+    addBookSection.classList.add('hidden');
+    contactSection.classList.add('hidden');
+    section.classList.remove('hidden');
+  }
 });
