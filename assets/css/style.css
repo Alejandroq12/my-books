@@ -1,27 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+html {
+  font-size: 62.5%;
 }
 
-:root {
-  --black: #272a31;
-  --light-black: #2e2e2e;
-  --orange: #ec5242;
-  --white: white;
-  --gray: #d3d3d3;
-  --dark-gray: #595959;
-  --dark-gray-rgb: 89, 89, 89;
-  --orange-transparency: rgba(236, 82, 66, 0.7);
-  --gray-transparency: rgba(211, 211, 211, 0.2);
+button {
+  height: 3rem;
+  width: 8rem;
+  margin: 0 1rem;
+  background-color: white;
+  box-shadow: 5px 4px black;
 }
 
-body {
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 10px;
+h1,
+h2 {
+  font-size: 3rem;
 }
+
+hr {
+  width: 50%;
+}
+
+.container {
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  width: 50%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.booksContainer {
+  font-size: 1.5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: solid black 3px;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.book:nth-child(even) {
+  background-color: #c7d6d8;
+}
+
+.bookTitleAuthor {
+  display: flex;
+  align-items: center;
+}
+
+.bookTitleAuthor > * {
+  margin: 0 0.3rem;
+}
+
+.addBookForm input {
+  width: 50%;
+  margin: 0.5rem 0;
+  border: solid black 3px;
+}
+
+.addBookForm button {
+  margin: auto;
+}
+

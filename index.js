@@ -34,7 +34,7 @@ class BookList {
   }
 }
 
-class BookListUI {
+class BooksListUI {
   constructor(bookList) {
     this.bookList = bookList;
     this.bookTemplate = document.getElementById('bookInfoTemplate');
@@ -57,14 +57,14 @@ class BookListUI {
 }
 
 const bookList = new BookList();
-const bookListUI = new BookListUI(bookList);
+const booksListUI = new BooksListUI(bookList);
 
 document.getElementById('addBookButton').addEventListener('click', () => {
   const bookTitle = document.getElementById('bookTitle').value;
   const authorName = document.getElementById('bookAuthor').value;
   const newBook = new Book(bookTitle, authorName);
   bookList.addBook(newBook);
-  bookListUI.render();
+  booksListUI.render();
 });
 
-bookListUI.render();
+booksListUI.render();
