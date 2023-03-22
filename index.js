@@ -104,7 +104,19 @@ document.addEventListener('DOMContentLoaded', () => {
     showSection(contactSection);
   });
 
-  function displayLivedate() {
-    const liveDateElement = document.querySelector('.liveDate');
+  function displayLiveDate() {
+    const liveDateElement = document.querySelector('.live-date');
+    const now = new Date();
+    const options = {
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    };
+    const formattedDate = new Intl.DateTimeFormat('en-US', options).format(now);
+    liveDateElement.textContent = formattedDate;
   }
+  displayLiveDate();
+  setInterval(displayLiveDate, 30000);
 });
