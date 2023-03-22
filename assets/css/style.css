@@ -162,3 +162,12 @@ input:focus {
   font-size: 3rem;
   margin: 1rem;
 }
+
+/* Footer section */
+footer {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #c7d6d8;
+  height: 8rem;
+}
