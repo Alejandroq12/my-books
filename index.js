@@ -103,4 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
   navContact.addEventListener('click', () => {
     showSection(contactSection);
   });
+
+  function displayLivedate() {
+    const liveDateElement = document.querySelector('.liveDate');
+  }
 });
