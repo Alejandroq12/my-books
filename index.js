@@ -96,6 +96,9 @@ document.addEventListener('DOMContentLoaded', () => {
     showSection(booksSection);
   });
 
-
+  navAddBook.addEventListener('click', () => {
+    showSection(addBookSection);
   });
+
+
 });
