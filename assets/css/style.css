@@ -143,3 +143,22 @@ input:focus {
 .addBookForm button {
   margin: auto;
 }
+
+/* Contact section */
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.contact-section__h2 {
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+.contact-section__p {
+  font-size: 3rem;
+  margin: 1rem;
+}
