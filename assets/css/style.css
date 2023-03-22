@@ -82,7 +82,7 @@ hr {
 
 .booksContainer {
   font-size: 1.5rem;
-  width: 50%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -115,8 +115,8 @@ hr {
 }
 
 button {
-  height: 3rem;
-  width: 8rem;
+  height: 2.5rem;
+  width: 7rem;
   margin: 0 1rem;
   background-color: white;
   box-shadow: 5px 4px black;
@@ -130,7 +130,7 @@ button {
 
 .addBookForm input,
 input:focus {
-  width: 50%;
+  width: 85%;
   border: solid black 3px;
   color: black;
   background-color: rgba(0, 0, 0, 0.1);
