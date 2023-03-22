@@ -60,5 +60,36 @@ document.addEventListener('DOMContentLoaded', () => {
   const bookList = new BookList();
   const booksListUI = new BooksListUI(bookList);
 
+  document.getElementById('addBookButton').addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const bookTitleInput = document.getElementById('bookTitle');
+    const authorNameInput = document.getElementById('bookAuthor');
+    const bookTitle = document.getElementById('bookTitle').value;
+    const authorName = document.getElementById('bookAuthor').value;
+    const newBook = new Book(bookTitle, authorName);
+    bookList.addBook(newBook);
+    booksListUI.render();
+    // Clear the input fields after adding the book
+    bookTitleInput.value = '';
+    authorNameInput.value = '';
+  });
+
+  booksListUI.render();
+
+const navBooks = document.querySelector('navBooks');
+const navAddBook = document.querySelector('navAddBook');
+const navContact = document.querySelector('navContact');
+
+
+
+
+
+
+
+
+
+
+
 
 });
