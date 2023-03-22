@@ -67,3 +67,56 @@ h2 {
 hr {
   width: 50%;
 }
+
+/* Books section */
+.container {
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  width: 50%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.booksContainer {
+  font-size: 1.5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: solid black 3px;
+}
+
+.books-section__h1 {
+  font-size: 5rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.book:nth-child(even) {
+  background-color: #c7d6d8;
+}
+
+.bookTitleAuthor {
+  display: flex;
+  align-items: center;
+}
+
+.bookTitleAuthor > * {
+  margin: 0 0.3rem;
+}
+
+button {
+  height: 3rem;
+  width: 8rem;
+  margin: 0 1rem;
+  background-color: white;
+  box-shadow: 5px 4px black;
+}
