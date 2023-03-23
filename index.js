@@ -62,9 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function isValidInput(input) {
     if (input.trim() === '') return false;
-    const regex = /^[a-zA-Z0-9\s]+$/;
+    const regex = /^[a-zA-Z0-9\s(),.\\-]+$/;
     return regex.test(input);
   }
+  
 
   document.getElementById('addBookButton').addEventListener('click', (event) => {
     event.preventDefault();
@@ -73,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const authorNameInput = document.getElementById('bookAuthor');
     const bookTitle = bookTitleInput.value;
     const authorName = authorNameInput.value;
-
     const errorMessage = document.getElementById('error-message');
     const successMessage = document.getElementById('success-message');
     errorMessage.textContent = '';
