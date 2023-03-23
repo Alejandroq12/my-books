@@ -171,3 +171,17 @@ footer {
   background-color: #c7d6d8;
   height: 8rem;
 }
+
+
+#error-message {
+  color: red;
+  margin-top: 5rem;
+  font-size: 3rem;
+}
+
+#success-message {
+  color: green;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
