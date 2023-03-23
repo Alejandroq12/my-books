@@ -12,27 +12,27 @@ document.addEventListener('DOMContentLoaded', () => {
       this.booksInfo = JSON.parse(localStorage.getItem('books') || '[]');
     }
 
-    renderBooks(renderFn) {
+    renderBooks = (renderFn) => {
       this.booksInfo.forEach((book, index) => {
         renderFn(book, () => {
           this.removeBook(index);
         });
       });
-    }
+    };
 
-    removeBook(index) {
+    removeBook = (index) => {
       this.booksInfo.splice(index, 1);
       this.updateStorage();
-    }
+    };
 
-    addBook(book) {
+    addBook = (book) => {
       this.booksInfo.push(book);
       this.updateStorage();
-    }
+    };
 
-    updateStorage() {
+    updateStorage = () => {
       localStorage.setItem('books', JSON.stringify(this.booksInfo));
-    }
+    };
   }
 
   class BooksListUI {
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       this.booksContainer = document.querySelector('.booksContainer');
     }
 
-    render() {
+    render = () => {
       this.booksContainer.innerHTML = '';
       this.bookList.renderBooks((book, removeBookFn) => {
         const bookInstance = this.bookTemplate.content.cloneNode(true);
@@ -54,18 +54,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         this.booksContainer.appendChild(bookInstance);
       });
-    }
+    };
   }
 
   const bookList = new BookList();
   const booksListUI = new BooksListUI(bookList);
 
-  function isValidInput(input) {
+  const isValidInput = (input) => {
     if (input.trim() === '') return false;
     const regex = /^[a-zA-Z0-9\s(),.\\-]+$/;
     return regex.test(input);
-  }
-  
+  };
 
   document.getElementById('addBookButton').addEventListener('click', (event) => {
     event.preventDefault();
@@ -90,7 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const newBook = new Book(bookTitle, authorName);
     bookList.addBook(newBook);
     booksListUI.render();
-    // Clear the input fields after adding the book
     bookTitleInput.value = '';
     authorNameInput.value = '';
 
@@ -110,12 +108,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const addBookSection = document.getElementById('addBookSection');
   const contactSection = document.getElementById('contactSection');
 
-  function showSection(section) {
+  const showSection = (section) => {
     booksSection.classList.add('hidden');
     addBookSection.classList.add('hidden');
     contactSection.classList.add('hidden');
     section.classList.remove('hidden');
-  }
+  };
 
   navBooks.addEventListener('click', () => {
     showSection(booksSection);
@@ -129,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showSection(contactSection);
   });
 
-  function displayLiveDate() {
+  const displayLiveDate = () => {
     const liveDateElement = document.querySelector('.live-date');
     const now = new Date();
     const options = {
@@ -141,7 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     const formattedDate = new Intl.DateTimeFormat('en-US', options).format(now);
     liveDateElement.textContent = formattedDate;
-  }
+  };
+
   displayLiveDate();
   setInterval(displayLiveDate, 30000);
 });
