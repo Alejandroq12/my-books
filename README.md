@@ -118,9 +118,11 @@ Install this project with:
 
 2. But in case you want to test the linter that I configured to check errors you will have to complete the following steps:
 
+Run the command to install all necessary dependencies (including linters):
+
 ```
-npm init -y
-npm install --save-dev hint@7.x
+npm install
+
 ```
 
 3. If you run npm install do not forget to create a .gitignore file to prevent the node_modules to be uploaded to GitHub:
