@@ -1,11 +1,11 @@
-<a name="readme-top">Awesome Books</a>
+<a name="readme-top">My Books</a>
 
 
 <div align="center">
   <img src="./assets/img/logo/logo-readme.png" alt="logo" width="600"  height="auto" />
   <br/>
 
-  <h3><b>Awesome Books</b></h3>
+  <h3><b>My Books</b></h3>
 
 </div>
 
@@ -13,32 +13,32 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-    - [🚀 Live Demo](#live-demo)
-    - [🤓 Loom walkthrough](#loom-walkthrough)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 My Books ](#-my-books-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ (OPTIONAL) ](#-faq-optional-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Awesome Books <a name="about-project"></a>
+# 📖 My Books <a name="about-project"></a>
 
-"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I will learn how to manage data using JavaScript. Thanks to that my website will be more interactive. I will also use a medium-fidelity wireframe to build the UI.
+"My books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I will learn how to manage data using JavaScript. Thanks to that my website will be more interactive. I will also use a medium-fidelity wireframe to build the UI.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -68,15 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://alejandroq12.github.io/polyglot-talk/index.html)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LOOM WALKTHROUGH -->
-
-## 😎 Loom walkthrough <a name="loom-walkthrough"></a>
-
-- [Loom walkthrough Link]()
+- [Live Demo Link](https://alejandroq12.github.io/my-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,7 +92,7 @@ Clone this repository to your desired folder:
 
 1. Clone it using your terminal:
 ```
-git clone https://github.com/Alejandroq12/polyglot-talk.git
+git clone https://github.com/Alejandroq12/my-books.git
 ```
 
 2. If the previous method does not work you may also download the repo as a .zip file and once you decompress the .zip file you are ready to use it.
@@ -146,12 +138,26 @@ To see this project you will only need to:
 
 ### Run tests
 
-To run tests, run the following command:
+1. Make sure all the linters and their configurations are installed and set up correctly in your project. If you haven't installed them yet, run `npm install` in your project directory to install the packages listed in your `package.json` file.
 
+2. Run each linter with the following commands:
+
+- For ESLint:
+```
+npx eslint .
+
+```
+- For Stylelint:
+```
+npx stylelint "**/*.{css,scss}"
+
+```
+- For hint:
 ```
 npx hint .
 
 ```
+3. Review the output of each linter and fix any issues reported.
 
 ### Deployment
 
@@ -209,6 +215,7 @@ Feel free to check the [issues page](../../issues/).
 
 If you like this project please give a star.
 Thanks in advance.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
