@@ -38,8 +38,7 @@
 
 # 📖 My Books <a name="about-project"></a>
 
-"My books" is a website that displays a list of books and allows you to add and remove books from that list. By building this application, I learned how to manage data using JavaScript. Thanks to that my website is more interactive. I will also use a medium-fidelity wireframe to build the UI.
->>>>>>> 51b2b5a1dffb145865e8369d91c727a11f370771
+"My books" is a website that displays a list of books and allows you to add and remove books from that list. By building this application, I learned how to manage data using JavaScript. Thanks to that my website is more interactive. I also used a medium-fidelity wireframe to build the UI.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -59,9 +58,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **A fully functional website**
-- **Mobile first website**
-- **Only using semantic HTML**
+- **A fully functional website.**
+- **Mobile first website.**
+- **Only using semantic HTML.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,9 +118,11 @@ Install this project with:
 
 2. But in case you want to test the linter that I configured to check errors you will have to complete the following steps:
 
+Run the command to install all necessary dependencies (including linters):
+
 ```
-npm init -y
-npm install --save-dev hint@7.x
+npm install
+
 ```
 
 3. If you run npm install do not forget to create a .gitignore file to prevent the node_modules to be uploaded to GitHub:
