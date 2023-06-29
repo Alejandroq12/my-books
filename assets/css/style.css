@@ -127,3 +127,18 @@ button {
 button:hover {
   background-color: #ff4500;
 }
+
+/* Add book section */
+.addBookForm input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  transition: border-color 0.3s ease;
+}
+
+.addBookForm input:focus {
+  border-color: #ff6347;
+}
