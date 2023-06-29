@@ -156,3 +156,36 @@ button:hover {
   margin: 1rem;
   color: #333;
 }
+
+/* Footer section */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem 0;
+  font-size: 1.6rem;
+  color: #888;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
+
+#error-message {
+  color: #ff6347;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+#success-message {
+  color: #228b22;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.contentSection.hidden {
+  display: none;
+}
