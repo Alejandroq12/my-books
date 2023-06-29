@@ -1,22 +1,22 @@
 {
-  "name": "awesome-books",
+  "name": "my-books",
   "version": "1.0.0",
-  "description": "\"Awesome books\" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I will learn how to manage data using JavaScript. Thanks to that my website will be more interactive. I will also use a medium-fidelity wireframe to build the UI.",
+  "description": "\"My books\" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I will learn how to manage data using JavaScript. Thanks to that my website will be more interactive. I will also use a medium-fidelity wireframe to build the UI.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alejandroq12/awesome-books.git"
+    "url": "git+https://github.com/Alejandroq12/my-books.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Alejandroq12/awesome-books/issues"
+    "url": "https://github.com/Alejandroq12/my-books/issues"
   },
-  "homepage": "https://github.com/Alejandroq12/awesome-books#readme",
+  "homepage": "https://github.com/Alejandroq12/my-books#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
