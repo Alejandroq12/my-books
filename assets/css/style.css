@@ -24,3 +24,37 @@ body {
   height: 100%;
 }
 
+main {
+  flex-grow: 1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2rem 5%;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.6rem;
+  color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+  color: #ff6347;
+}
