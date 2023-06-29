@@ -142,3 +142,17 @@ button:hover {
 .addBookForm input:focus {
   border-color: #ff6347;
 }
+
+/* Contact section */
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section__p {
+  font-size: 2.4rem;
+  margin: 1rem;
+  color: #333;
+}
